@@ -1,0 +1,11 @@
+server:
+  port: 3000
+spring:
+  quartz:
+    job-store-type: jdbc
+    jdbc:
+      initialize-schema: always
+  datasource:
+    url: jdbc:postgresql://localhost:5432/quartz_demo
+    username: postgres
+    password: postgres
